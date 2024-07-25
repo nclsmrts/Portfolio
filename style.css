@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "fredoka";
+    src: url(fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "fredoka1";
+    src: url(fonts/Fredoka/static/Fredoka-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "inika";
+    src: url(fonts/Inika/Inika-Regular.ttf);
+}
+
+:root {
+    --laranja: #EF5600;
+    --cinza: #343434;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2C2C2C;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu p {
+    display: flex;
+    margin-bottom: 0;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "fredoka";
+}
+
+.botaodark svg {
+    margin-top: 20px;
+}
+
+.bemvindo {
+    width: 600px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio {
+    color: var(--laranja);
+    font-size: 38px;
+    font-family: "fredoka";
+}
+
+.bm {
+    color: var(--laranja);
+    font-size: 60px;
+    font-family: "fredoka1";
+}
+
+.sobremim {
+    background-color: var(--cinza);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sobre {
+    color: var(--laranja);
+    font-size: 40px;
+    font-family: "inika";
+}
+
+.texto {
+    color: white;
+    font-size: 24px;
+    font-family: "fredoka";
+    width: 900px;
+    height: 300px;
+}
+
+.skil {
+    width: 100%;
+    height: 500px;
+}
+
+.skil p {
+    font-family: "fredoka";
+    font-size: 30px;
+    color: var(--laranja);
+}
