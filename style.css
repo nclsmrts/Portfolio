@@ -115,7 +115,7 @@ header {
 
 #skil {
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,9 +129,63 @@ header {
     color: white;
 }
 
-#conteudo-skil{
+#conteudo-skil {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-evenly;
+}
+
+#projetos {
+    background-color: var(--cinza);
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#projetos h2 {
+    font-family: "inika";
+    font-size: 35px;
+    color: var(--laranja);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.projeto1 {
+    width: 400px;
+    height: 450px;
+    background-color: #0000004d;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+#contatos h2 {
+    font-family: "inika";
+    font-size: 35px;
+    color: white;
+}
+
+#contatos {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.insta, .git, .whats, .email{
+    margin: 30px;
 }
