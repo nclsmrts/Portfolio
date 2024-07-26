@@ -32,6 +32,12 @@ body {
     background-color: #2C2C2C;
 }
 
+.container-grid {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -40,7 +46,7 @@ header {
     justify-content: space-evenly;
 }
 
-.menu {
+#menu {
     width: 80%;
     height: 100%;
     display: flex;
@@ -48,11 +54,11 @@ header {
     justify-content: space-evenly;
 }
 
-.menu p {
+#menu p {
     display: flex;
     margin-bottom: 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     align-items: center;
     justify-content: center;
     font-family: "fredoka";
@@ -64,7 +70,7 @@ header {
 
 .bemvindo {
     width: 600px;
-    height: 650px;
+    height: 615px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +89,7 @@ header {
     font-family: "fredoka1";
 }
 
-.sobremim {
+#sobremim {
     background-color: var(--cinza);
     height: 700px;
     display: flex;
@@ -107,13 +113,25 @@ header {
     height: 300px;
 }
 
-.skil {
+#skil {
     width: 100%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.skil p {
-    font-family: "fredoka";
-    font-size: 30px;
-    color: var(--laranja);
+#skil p {
+    font-family: "inika";
+    font-size: 35px;
+    color: white;
+}
+
+#conteudo-skil{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
