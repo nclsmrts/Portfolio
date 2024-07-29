@@ -22,9 +22,9 @@
 }
 
 .light-mode:root {
-    --backgrounddark: #a5a2a2;
+    --backgrounddark: #ddd8d8;
     --branco: #000000;
-    --cinza: #797777;
+    --cinza: #b3adad;
 }
 
 * {
@@ -93,6 +93,15 @@ header {
 
 .botaodark:hover {
     color: var(--laranja);
+}
+
+.botao-menu {
+    display: none;
+}
+
+.botao-menu button {
+    background: none;
+    border: none;
 }
 
 .bemvindo {
@@ -222,20 +231,36 @@ header {
 }
 
 @media screen and (max-width:1300px) {
-    
-    .sobre{
+
+    .sobre {
         font-size: 35px;
     }
-    .texto{
+
+    .texto {
         font-size: 20px;
         width: 70%;
     }
-    
+
     .projeto1 {
         width: 300px;
     }
 
-    .cards{
-       
+}
+
+@media screen and (max-width:600px) {
+
+    header{
+        flex-direction: column;
+        align-items: baseline;
     }
+
+    #menu {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .menu-fechado{
+        display: none;
+    }
+
 }

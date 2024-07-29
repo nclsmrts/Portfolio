@@ -11,12 +11,34 @@
 
 <body>
     <header class="container-grid">
-        <div id="menu">
+        <div class="botao-menu">
+            <button>
+                <svg id="icone-aberto" width="75px" height="75px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <svg id="icone-fechado" width="75px" height="75px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 6H20M4 12H14M4 18H9" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <nav id="menu">
             <a href="#sobremim">Sobre mim</a>
             <a href="#skil">Habilidades</a>
             <a href="#projetos">Projetos</a>
             <a href="#contatos">Contatos</a>
-        </div>
+        </nav>
         <a class="botaodark" id="botaodark" onclick="mudarmodo()">
             <svg width="95px" height="95px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"
                 stroke="#ffffff" stroke-width="0.00024000000000000003">
@@ -37,6 +59,7 @@
                 </g>
             </svg>
         </a>
+
     </header>
     <div class="bemvindo">
         <p class="bm">Bem-vindo</p>

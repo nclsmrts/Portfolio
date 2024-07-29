@@ -9,3 +9,14 @@ const mudarmodo = () => {
        
     } html.classList.toggle("light-mode")
 }
+
+
+// abrir/fechar menu
+
+let iconeaberto = document.getElementById("icone-aberto")
+let iconefechado = document.getElementById("icone-fechado")
+let menu = document.getElementById("menu")
+
+const abrirmenu = () => {
+    
+}
