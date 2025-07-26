@@ -58,9 +58,14 @@ header {
 #menu {
     width: 80%;
     height: 100%;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#menu nav {
+    display: flex;
 }
 
 #menu a {
@@ -70,6 +75,7 @@ header {
     border: none;
     color: var(--branco);
     font-size: 17px;
+    margin: 25px;
     align-items: center;
     justify-content: center;
     font-family: "fredoka";
@@ -100,6 +106,14 @@ header {
     border: none;
 }
 
+#icone-fechado {
+    display: none;
+}
+
+#icone-aberto {
+    display: none;
+}
+
 .bemvindo {
     width: 100vh;
     height: 615px;
@@ -121,9 +135,10 @@ header {
     font-family: "fredoka1";
 }
 
+
 #sobremim {
-    background-color: var(--cinza);
-    height: 700px;
+    /* background-color: var(--cinza); */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,10 +154,11 @@ header {
 
 .texto {
     color: var(--branco);
-    font-size: 24px;
+    font-size: 20px;
     font-family: "fredoka";
     width: 90%;
     height: 300px;
+    line-height: 35px;
 }
 
 #skil {
@@ -169,7 +185,7 @@ header {
 }
 
 #projetos {
-    background-color: var(--cinza);
+    /* background-color: var(--cinza); */
     height: 800px;
     width: 100%;
     display: flex;
@@ -187,16 +203,57 @@ header {
 
 .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     width: 85%;
 }
 
+.cards h3 {
+    font-family: "inika";
+    font-size: 35px;
+    color: var(--branco);
+    margin-bottom: 5%;
+}
+
 .projeto1 {
-    width: 400px;
-    height: 450px;
+    /* width: 50%;
+    height: 75%;
+    background-color: #0000004d;
+    border-radius: 15px; */
+    margin: 30px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto1 img {
+    width: 50%;
+    height: 75%;
     background-color: #0000004d;
     border-radius: 15px;
-    margin: 30px;
+}
+
+.projeto1 p {
+    color: var(--branco);
+    font-family: "fredoka";
+    font-size: 20px;
+    margin-top: 5%;
+    line-height: 35px;
+}
+
+.projeto1 a {
+    background-color: var(--laranja);
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--branco);
+    text-decoration: none;
+    /* font-weight: bold; */
+    border-radius: 10px;
+    width: 20%;
+    font-size: 25px;
+    text-align: center;
+    font-family: "fredoka";
 }
 
 #contatos h2 {
@@ -227,7 +284,7 @@ header {
 }
 
 
-@media screen and (max-width:1300px) {
+/* @media screen and (max-width:1300px) {
 
     .sobre {
         font-size: 35px;
@@ -242,9 +299,9 @@ header {
         width: 300px;
     }
 
-}
+} */
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
 
     header {
         flex-direction: column;
@@ -294,4 +351,4 @@ header {
         width: auto;
     }
 
-}
+} */
