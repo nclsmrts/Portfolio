@@ -138,7 +138,7 @@ header {
 
 #sobremim {
     /* background-color: var(--cinza); */
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +321,8 @@ header {
         margin-bottom: 20%;
     }
 
-    .texto, .projeto1 p {
+    .texto,
+    .projeto1 p {
         font-size: 14px;
     }
 
@@ -333,6 +334,12 @@ header {
         flex-direction: column;
         align-items: baseline;
     }
+
+     #menu nav {
+        display: none;
+    }
+    
+
 
     .botao-menu button {
         margin-top: 10px;
@@ -370,12 +377,47 @@ header {
     }
 
     .botaodark {
-        position: absolute;
-        right: 5%;
+        position: relative;
+        margin-left: 40%;
     }
 
     .bemvindo {
         width: auto;
     }
 
+    .sobre {
+        font-size: 29px;
+        margin-bottom: 10%;
+    }
+
+    .texto {
+        font-size: 14px;
+        line-height: 35px;
+        height: 100%;
+    }
+    .projeto1 img {
+        width: 100%;
+        
+    }
+
+    .projeto1 a {
+        font-size: 16px;
+        padding: 5%;
+        width: 50%;
+    }
+
+    #contatos {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    #menu nav {
+        display: none;
+    }
+
+    #contatos {
+        display: none;
+    }
 }
