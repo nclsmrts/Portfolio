@@ -186,7 +186,7 @@ header {
 
 #projetos {
     /* background-color: var(--cinza); */
-    height: 800px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -245,7 +245,8 @@ header {
 .projeto1 a {
     background-color: var(--laranja);
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 6%;
+    padding: 1%;
     color: var(--branco);
     text-decoration: none;
     /* font-weight: bold; */
@@ -284,24 +285,49 @@ header {
 }
 
 
-/* @media screen and (max-width:1300px) {
+@media screen and (max-width:1300px) {
 
     .sobre {
         font-size: 35px;
     }
 
     .texto {
-        font-size: 20px;
-        width: 70%;
+        width: 90%;
     }
 
     .projeto1 {
-        width: 300px;
+        width: 90%;
     }
 
-} */
+}
 
-/* @media screen and (max-width:600px) {
+
+@media screen and (max-width:1000px) {
+    .texto {
+        font-size: 17px;
+    }
+
+    .projeto1 p {
+        font-size: 17px;
+    }
+
+    .projeto1 a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #sobremim {
+        margin-bottom: 20%;
+    }
+
+    .texto, .projeto1 p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
 
     header {
         flex-direction: column;
@@ -337,18 +363,19 @@ header {
     .icone-aberto {
         color: var(--branco);
     }
+
     #menu a {
         font-size: 20px;
         margin-bottom: 20px;
     }
 
-    .botaodark{
+    .botaodark {
         position: absolute;
         right: 5%;
     }
 
-    .bemvindo{
+    .bemvindo {
         width: auto;
     }
 
-} */
+}
