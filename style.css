@@ -258,6 +258,10 @@ header {
     font-family: "fredoka";
 }
 
+.projeto1 a:hover {
+    background-color: #ef580089;
+}
+
 #contatos h2 {
     font-family: "inika";
     font-size: 35px;
