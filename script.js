@@ -41,7 +41,7 @@ function abrirJogo() {
 
   // Cria o iframe do jogo dinamicamente
   const iframe = document.createElement("iframe");
-  iframe.src = "game/index.html"; // caminho da sua build
+  iframe.src = "game/game.html"; // caminho da sua build
   iframe.width = "1080";
   iframe.height = "720";
   iframe.frameBorder = "0";
