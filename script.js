@@ -31,3 +31,34 @@ const abrirmenu = () => {
 
     }
 }
+
+
+
+
+function abrirJogo() {
+  const modal = document.getElementById("janela-jogo");
+  const container = document.getElementById("container-jogo");
+
+  // Cria o iframe do jogo dinamicamente
+  const iframe = document.createElement("iframe");
+  iframe.src = "game/index.html"; // caminho da sua build
+  iframe.width = "1080";
+  iframe.height = "720";
+  iframe.frameBorder = "0";
+  iframe.allowFullscreen = true;
+  iframe.id = "frame-jogo";
+
+  container.appendChild(iframe);
+  modal.style.display = "flex";
+}
+
+function fecharJogo() {
+  const modal = document.getElementById("janela-jogo");
+  const container = document.getElementById("container-jogo");
+
+  // Fecha o modal
+  modal.style.display = "none";
+
+  // Remove completamente o iframe da página (mata som e jogo)
+  container.innerHTML = "";
+}

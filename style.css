@@ -289,6 +289,42 @@ header {
     margin: 30px;
 }
 
+/* Anomaly */
+/* Fundo escuro por trás do jogo */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo da janela */
+.conteudo-modal {
+  background: #000;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+/* Botão de fechar */
+.fechar {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width:1300px) {
 
