@@ -1,259 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Portfolio</title>
+    <script src="script.js"></script>
+    <title>Portfolio - Nicolas Martins</title>
 </head>
-
 <body>
-    <header class="container-grid">
-        <div class="botao-menu">
-            <button onclick="abrirmenu()">
-                <svg id="icone-aberto" width="90px" height="90px" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M4 6H20M4 12H20M4 18H20" stroke="#EF5600" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    </g>
-                </svg>
-                <svg id="icone-fechado" width="90px" height="90px" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M4 6H20M4 12H14M4 18H9" stroke="#EF5600" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    </g>
-                </svg>
-            </button>
-        </div>
-        <div id="menu" class="menu-fechado">
+    <!-- Partículas de fundo -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header class="">
+        <div id="menu">
             <nav>
                 <a href="#sobremim">Sobre mim</a>
-                <!-- <a href="#skil">Habilidades</a> -->
                 <a href="#projetos">Projetos</a>
                 <a href="#contatos">Contatos</a>
             </nav>
         </div>
-        <a class="botaodark" id="botaodark" onclick="mudarmodo()">
-            <svg width="95px" height="95px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"
-                stroke="#ffffff" stroke-width="0.00024000000000000003">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <g clip-path="url(#a)" fill="#ffffff">
-                        <path
-                            d="M12 0a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1ZM4.929 3.515a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 0 0 1.414-1.414L4.93 3.515ZM1 11a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H1ZM18 12a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1ZM17.657 16.243a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 1 0 1.414-1.414l-2.828-2.828ZM7.757 17.657a1 1 0 1 0-1.414-1.414L3.515 19.07a1 1 0 1 0 1.414 1.414l2.828-2.828ZM20.485 4.929a1 1 0 0 0-1.414-1.414l-2.828 2.828a1 1 0 1 0 1.414 1.414l2.828-2.828ZM13 19a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"
-                            fill="currentcolor">
-                        </path>
-                    </g>
-                    <defs>
-                        <clipPath id="a">
-                            <path fill="#ffffff" d="M0 0h24v24H0z" fill="currentcolor"></path>
-                        </clipPath>
-                    </defs>
+        <button class="botaodark">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#ffffff">
+                    <path d="M12 0a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1ZM4.929 3.515a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 0 0 1.414-1.414L4.93 3.515ZM1 11a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H1ZM18 12a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1ZM17.657 16.243a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 1 0 1.414-1.414l-2.828-2.828ZM7.757 17.657a1 1 0 1 0-1.414-1.414L3.515 19.07a1 1 0 1 0 1.414 1.414l2.828-2.828ZM20.485 4.929a1 1 0 0 0-1.414-1.414l-2.828 2.828a1 1 0 1 0 1.414 1.414l2.828-2.828ZM13 19a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"></path>
                 </g>
             </svg>
-        </a>
-
+        </button>
     </header>
+
     <div class="bemvindo">
+        <!-- SVG decorativo de código -->
+        <svg class="code-decoration left" width="200" height="200" viewBox="0 0 200 200" fill="none">
+            <path d="M60 80L40 100L60 120" stroke="#EF5600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+            <path d="M80 80L100 100L80 120" stroke="#EF5600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+        </svg>
+        
+        <svg class="code-decoration right" width="200" height="200" viewBox="0 0 200 200" fill="none">
+            <path d="M140 80L160 100L140 120" stroke="#EF5600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+            <path d="M120 80L100 100L120 120" stroke="#EF5600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+        </svg>
+
         <p class="bm">Bem-vindo</p>
         <p class="portfolio">ao meu Portfolio!</p>
+        
+        <!-- Seta animada para scroll -->
+        <div class="scroll-indicator">
+            <svg width="30" height="50" viewBox="0 0 30 50">
+                <path d="M15 5 L15 35 M15 35 L10 30 M15 35 L20 30" stroke="#EF5600" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
     </div>
+
     <div id="sobremim" class="container-grid">
+        <!-- Ícone decorativo -->
+        <div class="section-icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="20" r="10" stroke="#EF5600" stroke-width="2" fill="none"/>
+                <path d="M15 50C15 40 20 35 30 35C40 35 45 40 45 50" stroke="#EF5600" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+        
         <p class="sobre">Um pouco sobre mim</p>
         <p class="texto">Me chamo Nicolas Martins, tenho 17 anos e sou apaixonado por tecnologia, criatividade e
             desenvolvimento de jogos. Atualmente, estou no segundo ano do ensino médio e curso Desenvolvimento de Jogos
             Digitais no SENAI, onde venho adquirindo conhecimento prático em programação, game design e ferramentas de
-            criação.
-
-            Tenho familiaridade com a engine Unity, onde desenvolvo protótipos e projetos voltados para jogos 2D e 3D.
+            criação. Tenho familiaridade com a engine Unity, onde desenvolvo protótipos e projetos voltados para jogos 2D e 3D.
             No meu tempo livre, gosto de jogar, escutar música e explorar novas linguagens e ferramentas que possam
-            expandir minhas habilidades como desenvolvedor.
-
-            Estou em busca da minha primeira oportunidade na área de desenvolvimento, com o objetivo de aplicar meus
+            expandir minhas habilidades como desenvolvedor. Estou em busca da minha primeira oportunidade na área de desenvolvimento, com o objetivo de aplicar meus
             conhecimentos, crescer profissionalmente e colaborar em projetos criativos e desafiadores.</p>
     </div>
-    <!-- <div id="skil">
-        <p>Habilidades</p>
-        <div id="conteudo-skil">
-            <svg width="170" height="190" viewBox="0 0 170 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="170" height="190" rx="25" fill="black" fill-opacity="0.2" />
-                <path
-                    d="M84.8438 47.967H64.2969C52.9492 47.967 43.75 55.4022 43.75 64.5738C43.75 73.7455 52.9492 81.1806 64.2969 81.1806M84.8438 47.967V81.1806M84.8438 47.967H105.391C116.739 47.967 125.938 55.4022 125.938 64.5738C125.938 73.7455 116.739 81.1806 105.391 81.1806M64.2969 81.1806H84.8438M64.2969 81.1806C52.9492 81.1806 43.75 88.6155 43.75 97.7874C43.75 106.959 52.9492 114.394 64.2969 114.394M84.8438 81.1806H105.391M84.8438 81.1806V114.394M105.391 81.1806C116.739 81.1806 125.938 88.6155 125.938 97.7874C125.938 106.959 116.739 114.394 105.391 114.394C94.0426 114.394 84.8438 106.959 84.8438 97.7874C84.8438 88.6155 94.0426 81.1806 105.391 81.1806ZM84.8438 114.394H64.2969M84.8438 114.394V131.001C84.8438 140.173 75.6449 147.608 64.2969 147.608C52.9492 147.608 43.75 140.173 43.75 131.001C43.75 121.829 52.9492 114.394 64.2969 114.394"
-                    stroke="#EF5600" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
 
-            <svg width="170" height="190" viewBox="0 0 170 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M102.553 115.665C97.2263 116.182 91.8609 115.209 87.0595 112.853C85.9719 111.986 85.0742 110.906 84.4218 109.679C83.7695 108.452 83.3763 107.105 83.2666 105.721C83.2644 105.514 83.221 105.31 83.1389 105.119C83.0568 104.929 82.9376 104.757 82.7883 104.613C82.6391 104.469 82.4626 104.356 82.2691 104.28C82.0757 104.204 81.8691 104.168 81.6614 104.172C79.4188 104.145 77.1768 104.151 74.9347 104.169C74.5428 104.129 74.151 104.245 73.8442 104.491C73.5374 104.737 73.3403 105.094 73.2957 105.484C73.1679 107.913 73.5797 110.339 74.5018 112.59C75.4239 114.841 76.8335 116.862 78.6298 118.507C83.1646 122.034 88.6707 124.098 94.4134 124.425C100.397 125.117 106.453 124.86 112.356 123.665C116.889 122.823 121.045 120.59 124.244 117.28C126.012 115.107 127.197 112.522 127.688 109.767C128.178 107.012 127.958 104.178 127.049 101.531C126.284 99.6648 125.102 97.9981 123.591 96.6586C122.08 95.319 120.281 94.3422 118.333 93.8031C109.261 90.6303 99.461 90.8703 90.2124 88.4593C88.6067 87.9556 86.6448 87.4088 85.9293 85.7144C85.5156 84.5221 85.4874 83.2306 85.8485 82.0214C86.2095 80.8123 86.9418 79.7463 87.9422 78.9735C90.8461 77.3194 94.1528 76.4988 97.4959 76.6027C102.033 76.177 106.607 76.8292 110.842 78.506C112.114 79.2518 113.208 80.2647 114.049 81.4743C114.889 82.684 115.454 84.0615 115.707 85.511C115.719 85.9388 115.891 86.3466 116.189 86.6544C116.487 86.9622 116.89 87.1478 117.319 87.1747C119.545 87.22 121.773 87.1868 123.999 87.1898C124.385 87.2358 124.775 87.1414 125.097 86.9239C125.419 86.7063 125.651 86.3803 125.751 86.0057C125.771 83.0123 125.006 80.0657 123.531 77.4577C122.057 74.8497 119.925 72.6709 117.346 71.1371C110.227 67.8625 102.325 66.6574 94.55 67.6605C88.8531 67.8933 83.4102 70.0725 79.1356 73.8332C77.1731 75.9414 75.8442 78.5566 75.3002 81.3809C74.7562 84.2052 75.019 87.125 76.0587 89.8076C76.868 91.6047 78.0586 93.2055 79.5485 94.4996C81.0385 95.7938 82.7922 96.7505 84.6889 97.3038C93.7307 100.559 103.641 99.5144 112.77 102.393C114.549 102.995 116.621 103.915 117.166 105.888C117.459 107.071 117.437 108.309 117.102 109.481C116.767 110.653 116.131 111.717 115.256 112.568C111.459 114.919 107.01 116.004 102.553 115.665ZM143.77 56.0398C126.116 46.0898 108.459 36.1487 90.7974 26.2167C89.0253 25.229 87.0289 24.7104 84.9986 24.7104C82.9682 24.7104 80.9718 25.229 79.1997 26.2167C61.6069 36.1187 44.0132 46.0203 26.4186 55.9214C24.7069 56.8513 23.2761 58.2207 22.2744 59.8876C21.2728 61.5545 20.7368 63.4581 20.7222 65.401V125.23C20.7503 127.208 21.3152 129.142 22.3567 130.826C23.3983 132.511 24.8777 133.883 26.6382 134.797C31.6922 137.538 36.6026 140.56 41.7482 143.119C44.7181 144.702 48.0168 145.574 51.3832 145.666C54.7496 145.758 58.0913 145.068 61.1439 143.651C63.4281 142.224 65.2867 140.214 66.5261 137.828C67.7655 135.443 68.3403 132.769 68.1906 130.087C68.2299 110.342 68.1966 90.5963 68.2056 70.851C68.2401 70.6351 68.2285 70.4144 68.1714 70.2033C68.1144 69.9922 68.0132 69.7956 67.8746 69.6262C67.736 69.4568 67.5631 69.3185 67.3671 69.2203C67.1711 69.1222 66.9566 69.0664 66.7375 69.0566C64.4893 69.0204 62.2377 69.0354 59.9896 69.0506C59.7815 69.032 59.5717 69.0575 59.3741 69.1253C59.1765 69.1931 58.9955 69.3019 58.843 69.4443C58.6905 69.5868 58.57 69.7597 58.4892 69.9519C58.4085 70.144 58.3695 70.351 58.3746 70.5592C58.3444 90.1775 58.3807 109.801 58.3565 129.423C58.3616 130.777 57.9512 132.101 57.1801 133.216C56.4091 134.331 55.3143 135.184 54.0427 135.662C52.5784 136.093 51.0393 136.212 49.5259 136.01C48.0125 135.808 46.5588 135.29 45.2599 134.49C40.5777 131.854 35.8956 129.219 31.2136 126.584C30.9034 126.437 30.6457 126.199 30.4752 125.902C30.3047 125.605 30.2295 125.263 30.2599 124.923C30.2599 105.183 30.2599 85.445 30.2599 65.7076C30.2274 65.3236 30.3174 64.9393 30.5171 64.6093C30.7168 64.2794 31.0161 64.0209 31.372 63.8706C48.9071 54.027 66.4388 44.1731 83.9672 34.3088C84.2716 34.1016 84.6319 33.991 85.0005 33.9915C85.3692 33.9921 85.7291 34.1037 86.0329 34.3119C103.567 44.1585 121.101 54.0087 138.634 63.8622C138.988 64.0167 139.285 64.2776 139.483 64.6085C139.682 64.9394 139.771 65.3237 139.74 65.7079C139.737 85.4436 139.735 105.181 139.734 124.92C139.765 125.262 139.691 125.606 139.523 125.906C139.356 126.206 139.101 126.449 138.792 126.602C121.526 136.333 104.25 146.051 86.965 155.754C86.1392 156.212 85.1617 156.95 84.1959 156.395C79.669 153.841 75.1973 151.188 70.6855 148.609C70.4549 148.434 70.1768 148.33 69.887 148.313C69.5971 148.296 69.3087 148.365 69.0586 148.512C67.0713 149.673 64.9795 150.646 62.8105 151.418C61.8326 151.813 60.6295 151.925 59.9563 152.829C60.8143 153.76 61.8538 154.506 63.0112 155.022C68.2878 158.068 73.5673 161.11 78.8495 164.15C80.5965 165.243 82.6057 165.85 84.6679 165.907C86.73 165.965 88.7699 165.47 90.5752 164.475C108.171 154.586 125.765 144.692 143.359 134.795C145.118 133.879 146.596 132.507 147.638 130.824C148.68 129.14 149.247 127.208 149.278 125.23V65.401C149.263 63.4965 148.747 61.6292 147.78 59.9862C146.813 58.3433 145.43 56.9824 143.77 56.0398Z"
-                    fill="#EF5600" />
-                <rect width="170" height="190" rx="25" fill="black" fill-opacity="0.2" />
-            </svg>
-
-            <svg width="170" height="190" viewBox="0 0 170 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="170" height="190" rx="25" fill="black" fill-opacity="0.2" />
-                <g clip-path="url(#clip0_25_26)">
-                    <path
-                        d="M70.011 39.6613V45.4397H51.7293V27.5415H70.011V33.8742H59.5645V39.6613H70.011ZM88.804 33.8742H96.1074V27.5415H77.8238C77.8238 27.5415 77.8238 30.7202 77.8238 33.8742C80.2698 35.8512 81.5452 36.7975 85.0829 39.6568C83.0148 39.6568 77.8238 39.6623 77.8238 39.6623V45.4397H96.1074V39.6613L88.804 33.8742ZM114.717 33.8742H122.02V27.5415H103.737C103.737 27.5415 103.737 30.7202 103.737 33.8742C106.182 35.8512 107.458 36.7975 110.996 39.6568C108.929 39.6568 103.737 39.6623 103.737 39.6623V45.4397H122.02V39.6613L114.717 33.8742ZM146.1 53.946L134.994 151.177L86.8746 161.648L38.7544 151.177L27.65 53.946H146.1ZM123.722 73.7162H86.8311H49.2885L51.0838 85.4575H86.8311H88.8391L86.8311 86.133L52.3904 97.7269L53.5327 109.203L86.8311 109.291L104.678 109.337L103.535 124.64L86.8311 128.441V128.429L86.6941 128.46L70.5614 125.168L69.5824 115.669H69.5291H54.565H54.5124L56.471 134.007L86.8311 141.264V141.25L86.8857 141.264L117.083 134.139L121.002 97.7272H86.8311H86.7467L86.8311 97.6978L122.252 85.4578L123.722 73.7162Z"
-                        fill="#EF5600" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_25_26">
-                        <rect width="166.25" height="134.37" fill="white" transform="translate(3.75 27.4099)" />
-                    </clipPath>
-                </defs>
-            </svg>
-
-            <svg width="170" height="190" viewBox="0 0 170 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="170" height="190" rx="25" fill="black" fill-opacity="0.2" />
-                <path
-                    d="M36.6151 23.0491H44.1302V29.0104H51.0048V23.0491H58.5205V41.101H51.0054V35.0558H44.1308V41.101H36.6157V23.0491H36.6151ZM68.4029 29.0355H61.7874V23.0491H82.5374V29.0355H75.9186V41.101H68.4035V29.0355H68.4029ZM85.8303 23.0491H93.6678L98.4874 29.3921L103.303 23.0491H111.142V41.101H103.657V32.1537L98.4871 38.5719H98.3582L93.1846 32.1537V41.101H85.8303V23.0491ZM114.883 23.0491H122.4V35.1344H132.968V41.101H114.883V23.0491ZM25.625 49.3571L36.3749 146.163L84.6149 156.914L132.989 146.147L143.75 49.3569L25.625 49.3571ZM121.326 72.3301L120.653 78.3493L120.358 81.0182H120.309H84.6877H84.6361H63.7679L65.1194 93.1753H84.6361H84.6877H115.026H119.011L118.651 96.364L115.176 127.622L114.953 129.626L84.6877 136.361V136.363L84.6198 136.379L54.3274 129.627L52.2551 110.985H59.0974H67.1003L68.1533 120.454L84.6224 124.025L84.6361 124.022V124.021L101.13 120.448L102.846 105.049H84.6877H84.6361H51.5947L47.9602 72.3301L47.6062 69.1453H84.6361H84.6877H121.68L121.326 72.3301Z"
-                    fill="#EF5600" />
-            </svg>
-
-        </div>
-    </div> -->
     <div id="projetos" class="container-grid">
+        <!-- Ícone decorativo de projetos -->
+        <div class="section-icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <rect x="10" y="15" width="40" height="30" rx="2" stroke="#EF5600" stroke-width="2" fill="none"/>
+                <path d="M10 25 L50 25" stroke="#EF5600" stroke-width="2"/>
+                <circle cx="15" cy="20" r="1.5" fill="#EF5600"/>
+                <circle cx="20" cy="20" r="1.5" fill="#EF5600"/>
+                <circle cx="25" cy="20" r="1.5" fill="#EF5600"/>
+                <path d="M20 32 L25 37 L35 30" stroke="#EF5600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+        </div>
+
         <h2>Projetos</h2>
         <div class="cards">
             <div class="projeto1">
+                <div class="projeto-badge">Web</div>
                 <h3>Goodficado</h3>
-                <!-- <a href="#">
-                    <img src="imagens/Goodficado.png" alt="Imagem do projeto Goodficado">
-                </a> -->
-                <img src="imagens/Goodficado.png" alt="Imagem do projeto Goodficado">
-                <p>Este site foi desenvolvido como projeto para uma empresa fictícia chamada Goodficado, criada com o
-                    objetivo de simular um ambiente corporativo real. A proposta da empresa é oferecer soluções de
-                    gamificação corporativa, e o site foi construído para apresentar seus valores, missão e serviços de
-                    forma clara e profissional.
-
-                    O layout é responsivo, com foco em acessibilidade e boa performance. Utilizei HTML, CSS e
-                    JavaScript, e o site está hospedado no GitHub Pages. O projeto teve como objetivo exercitar
-                    habilidades de desenvolvimento front-end e criação de identidade visual para marcas.</p>
-
-                <a href="https://nclsmrts.github.io/Goodficado" target="_blank" rel="noopener noreferrer">🔗 Ver
-                    projeto</a>
+                <img src="imagens/Goodficado.png" alt="Goodficado">
+                <p>Site desenvolvido como projeto para uma empresa fictícia de gamificação corporativa. Layout responsivo, com foco em acessibilidade e boa performance utilizando HTML, CSS e JavaScript.</p>
+                <a href="https://nclsmrts.github.io/Goodficado" target="_blank">🔗 Ver projeto</a>
             </div>
+
             <div class="projeto1">
+                <div class="projeto-badge">Unity</div>
                 <h3>Diving Simulator</h3>
-                <img src="imagens/Diving-Simulator.png" alt="Imagem do projeto Portfolio">
-
-                <p>
-                    Diving Simulator é um projeto de jogo do gênero simulador, desenvolvido em grupo utilizando Unity e
-                    C#, com foco em oferecer uma experiência imersiva de mergulho em ambientes subaquáticos realistas. O
-                    projeto foi pensado para rodar em PC e com suporte para realidade virtual (VR).
-
-                    O jogo possui um único modo principal:
-
-                    Modo Científico: O jogador assume o papel de um explorador subaquático em uma missão científica. A
-                    tarefa é investigar o fundo do mar, coletar dados ambientais e
-                    manter o funcionamento do submarino ao longo da missão. A experiência combina exploração livre com
-                    desafios técnicos, promovendo imersão e aprendizado.
-
-                    Este projeto foi desenvolvido de forma colaborativa, com foco na divisão de tarefas, organização em
-                    equipe e aplicação prática dos conhecimentos adquiridos no curso de Desenvolvimento de Jogos.
-                </p>
-                <a href="https://drive.google.com/drive/folders/1uah6lLrFIC6o7v4XQWjmFNpRdd0Rrcdf" target="_blank"
-                    rel="noopener noreferrer">🔗 Ver projeto</a>
+                <img src="imagens/Diving-Simulator.png" alt="Diving Simulator">
+                <p>Jogo simulador de mergulho desenvolvido em Unity e C#, com suporte para VR. O jogador assume o papel de explorador subaquático em missões científicas investigando o fundo do mar.</p>
+                <a href="#" target="_blank">🔗 Ver projeto</a>
             </div>
+
             <div class="projeto1">
+                <div class="projeto-badge">Game Dev</div>
                 <h3>Cyberzone</h3>
-                <img src="imagens/Cyberzone.png" alt="Imagem do projeto Portfolio">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et auctor nulla, in fermentum sem.
-                    Sed eleifend hendrerit vestibulum. Etiam egestas pretium mi et vestibulum. Sed posuere, neque nec
-                    commodo aliquet, dolor ex vulputate odio, eu scelerisque ipsum orci luctus ex. Duis et pharetra
-                    arcu. Nullam ultrices libero lacinia scelerisque lobortis. Vestibulum nec semper tellus, hendrerit
-                    porta mi. In libero enim, consectetur id faucibus in, maximus sed enim. Phasellus pretium, nisi vel
-                    vulputate consectetur, ipsum orci feugiat ipsum, sed rhoncus ipsum libero id magna. In ut sem
-                    auctor, tempor mauris ut, viverra neque. In at lacus nec metus auctor dignissim. Fusce dictum eu
-                    diam ac imperdiet. Etiam venenatis at purus vitae gravida. Suspendisse mi risus, finibus quis neque
-                    vel, pretium eleifend augue. Mauris pharetra at ex sagittis condimentum.
-                </p>
-                <a href="https://github.com/nclsmrts/Cyberzone" target="_blank" rel="noopener noreferrer">🔗 Ver
-                    projeto</a>
+                <img src="imagens/Cyberzone.png" alt="Cyberzone">
+                <p>Projeto de jogo com temática cyberpunk desenvolvido durante o curso. Focado em mecânicas de combate e exploração em ambientes futuristas.</p>
+                <a href="https://github.com/nclsmrts/Cyberzone" target="_blank">🔗 Ver projeto</a>
             </div>
+
             <div class="projeto1">
+                <div class="projeto-badge">Roguelike</div>
                 <h3>Anomaly</h3>
-                <img src="imagens/Lucid_Origin_Futuristic_scifi_logo_design_with_the_word_ANOMAL_2.jpg"
-                    alt="Imagem do projeto Portfolio">
-                <p>
-                    Anomaly é um roguelike espacial de ação ambientado em uma galáxia distorcida por um buraco negro em
-                    colapso. O jogador assume o papel de um piloto solitário que atravessa setores instáveis repletos de
-                    criaturas e máquinas corrompidas, enfrentando desafios mutáveis a cada incursão. A missão: restaurar
-                    o equilíbrio em meio ao caos cósmico.
-                </p>
-                 <!-- <a href="https://nclsmrts.itch.io/anomaly" target="_blank" rel="noopener noreferrer">🔗 Ver
-                    projeto</a> -->
-
-                <!-- <a rel="noopener noreferrer" onclick="abrirJogo()">🔗 Ver
-                    projeto</a> -->
-               
-                    <a onclick="abrirJogo()">🔗 Ver projeto</a>
-
-                <!-- Janela (modal) que abre o jogo -->
-                <div id="janela-jogo" class="modal">
-                    <div class="conteudo-modal">
-                        <span class="fechar" onclick="fecharJogo()">&times;</span>
-                       <div id="container-jogo"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contatos">
-            <h2>Contatos</h2>
-            <div class="conteudo">
-                <a href="https://www.instagram.com/sidr0g_?igsh=bW52aTJmeGRteG5q" class="insta" target="_blank"
-                    rel="noopener noreferrer">
-
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M50 75C63.8071 75 75 63.8071 75 50C75 36.1929 63.8071 25 50 25C36.1929 25 25 36.1929 25 50C25 63.8071 36.1929 75 50 75ZM50 66.6667C59.2046 66.6667 66.6667 59.2046 66.6667 50C66.6667 40.7952 59.2046 33.3333 50 33.3333C40.7952 33.3333 33.3333 40.7952 33.3333 50C33.3333 59.2046 40.7952 66.6667 50 66.6667Z"
-                            fill="#EF5600" />
-                        <path
-                            d="M74.9999 20.8335C72.6987 20.8335 70.8333 22.699 70.8333 25.0002C70.8333 27.3013 72.6987 29.1668 74.9999 29.1668C77.3012 29.1668 79.1666 27.3013 79.1666 25.0002C79.1666 22.699 77.3012 20.8335 74.9999 20.8335Z"
-                            fill="#EF5600" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.89146 17.817C4.16663 23.1648 4.16663 30.1655 4.16663 44.1667V55.8334C4.16663 69.8347 4.16663 76.8355 6.89146 82.183C9.28829 86.8872 13.1128 90.7117 17.8169 93.1084C23.1647 95.8334 30.1653 95.8334 44.1666 95.8334H55.8333C69.8345 95.8334 76.8354 95.8334 82.1829 93.1084C86.887 90.7117 90.7116 86.8872 93.1083 82.183C95.8333 76.8355 95.8333 69.8347 95.8333 55.8334V44.1667C95.8333 30.1655 95.8333 23.1648 93.1083 17.817C90.7116 13.1129 86.887 9.28841 82.1829 6.89158C76.8354 4.16675 69.8345 4.16675 55.8333 4.16675H44.1666C30.1653 4.16675 23.1647 4.16675 17.8169 6.89158C13.1128 9.28841 9.28829 13.1129 6.89146 17.817ZM55.8333 12.5001H44.1666C37.0285 12.5001 32.176 12.5066 28.4253 12.813C24.7718 13.1115 22.9035 13.6525 21.6001 14.3166C18.4641 15.9145 15.9144 18.4642 14.3165 21.6002C13.6524 22.9036 13.1114 24.7719 12.8129 28.4254C12.5065 32.1761 12.5 37.0286 12.5 44.1667V55.8334C12.5 62.9717 12.5065 67.8238 12.8129 71.5747C13.1114 75.2284 13.6524 77.0967 14.3165 78.4001C15.9144 81.5359 18.4641 84.0855 21.6001 85.6834C22.9035 86.3476 24.7718 86.8888 28.4253 87.1872C32.176 87.4934 37.0285 87.5001 44.1666 87.5001H55.8333C62.9716 87.5001 67.8237 87.4934 71.5745 87.1872C75.2283 86.8888 77.0966 86.3476 78.4 85.6834C81.5358 84.0855 84.0854 81.5359 85.6833 78.4001C86.3475 77.0967 86.8887 75.2284 87.187 71.5747C87.4933 67.8238 87.5 62.9717 87.5 55.8334V44.1667C87.5 37.0286 87.4933 32.1761 87.187 28.4254C86.8887 24.7719 86.3475 22.9036 85.6833 21.6002C84.0854 18.4642 81.5358 15.9145 78.4 14.3166C77.0966 13.6525 75.2283 13.1115 71.5745 12.813C67.8237 12.5066 62.9716 12.5001 55.8333 12.5001Z"
-                            fill="#EF5600" />
-                    </svg>
-                </a>
-
-                <a href="https://github.com/nclsmrts" class="git" target="_blank" rel="noopener noreferrer">
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M16.9766 12.4742C17.2193 8.18216 18.2445 6.31575 21.1846 4.81696C24.3482 3.20378 29.3377 3.95451 35.2089 6.92758C37.7377 8.20875 37.9952 8.23483 42.4271 7.66662C48.3179 6.91108 55.9016 6.91375 61.3387 7.67354C65.4504 8.24812 65.7204 8.21941 68.2554 6.93558C76.5891 2.71537 83.1687 2.9915 85.5512 7.66129C86.7404 9.99221 86.9612 16.0405 86.0391 21.029C85.5279 23.7946 85.582 24.1399 86.8137 25.9547C95.4791 38.7244 89.2354 59.4234 74.3866 67.148C73.2504 67.7392 72.2929 68.105 71.5125 68.403C69.1162 69.318 68.3887 69.5959 69.2696 73.8075C69.6937 75.8334 70.2046 80.87 70.4054 85.0009C70.7683 92.4675 70.7629 92.5196 69.4533 94.043C67.6708 96.115 65.1016 96.15 63.3608 94.1259C62.2254 92.8059 62.1146 92.1825 62.1146 87.0896C62.1146 79.5634 61.2896 74.5609 59.3404 70.2742C57.0225 65.173 58.7408 63.2709 64.0416 62.1309C71.4096 60.5459 77.1641 55.9988 80.3716 49.2275C83.4212 42.7909 83.8808 33.8959 78.3675 28.4862C76.7996 26.623 76.6904 24.9353 77.81 19.8462C78.2283 17.9442 78.5791 15.4904 78.5896 14.3927C78.6054 12.6593 78.4475 12.3976 77.3829 12.3976C76.7091 12.3976 74.135 13.3776 71.6633 14.5752L67.7183 16.4873C67.3596 16.6611 66.9583 16.728 66.5625 16.6825C56.5312 15.5311 46.9995 15.5133 36.9192 16.687C36.5219 16.7333 36.1188 16.6665 35.7589 16.4918L31.816 14.5785C29.3441 13.3787 26.7701 12.3976 26.0965 12.3976C24.5392 12.3976 24.5158 13.5473 25.9353 20.3783C26.8024 24.5502 27.3859 25.4797 24.8792 28.8155C21.1218 33.8157 20.1833 40.0247 22.1982 46.5484C24.7376 54.7692 30.9562 60.323 39.6988 62.1759C44.9691 63.293 46.3466 64.7505 44.3341 70.7938C42.75 75.5496 41.7483 76.7755 39.4461 76.7755C36.3485 76.7755 34.4081 74.0921 35.476 71.2842C35.9463 70.0467 35.8064 69.9146 32.9046 68.8563C24.0465 65.6267 17.2714 58.388 14.1738 48.843C11.7796 41.466 12.8331 31.8642 16.6739 26.0606C17.9817 24.0845 18.0019 23.917 17.3916 20.1341C17.0463 17.9926 16.8596 14.546 16.9766 12.4742Z"
-                            fill="#EF5600" />
-                        <path
-                            d="M13.8835 66.4393C12.607 64.5247 10.0201 64.0072 8.10536 65.2839C6.19069 66.5601 5.67327 69.1472 6.94973 71.0618C7.89211 72.4755 9.01948 73.6368 9.97686 74.5938C10.1534 74.7705 10.3249 74.9409 10.4923 75.1072C11.2943 75.9038 12.0024 76.6072 12.7135 77.4422C14.2865 79.2884 15.8557 81.7751 16.7475 86.2343C17.1448 88.2205 18.5725 89.2905 19.3636 89.758C20.2215 90.2647 21.1589 90.5634 21.9302 90.758C23.5082 91.1559 25.4237 91.3626 27.2416 91.483C29.2373 91.6155 31.3997 91.6584 33.3333 91.6701C33.3347 93.9697 35.1996 95.8338 37.4999 95.8338C39.8011 95.8338 41.6666 93.9684 41.6666 91.6672V87.5005C41.6666 85.1993 39.8011 83.3338 37.4999 83.3338C37.1071 83.3338 36.6822 83.3351 36.2321 83.3368C33.7868 83.3443 30.5995 83.3539 27.7924 83.168C26.4388 83.0784 25.3261 82.9513 24.5101 82.7959C23.2535 77.863 21.2234 74.5809 19.0572 72.038C18.0996 70.9143 17.1081 69.9309 16.3015 69.1309C16.1505 68.9813 16.006 68.838 15.8694 68.7014C14.9388 67.7709 14.33 67.1093 13.8835 66.4393Z"
-                            fill="#EF5600" />
-                    </svg>
-
-                </a>
-                <a href="#" class="whats">
-
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M22.7909 30.7737C23.3103 26.8041 28.649 21.4091 32.8858 22.0077L32.8791 22.0012C37.0023 22.7583 40.2663 29.6162 42.1068 32.6998C43.4109 34.9372 42.5641 37.204 41.3478 38.1606C39.7068 39.4386 37.1409 41.202 37.6793 42.9726C38.6364 46.1202 50 57.1012 55.5891 60.2229C57.7046 61.4045 59.2387 58.2881 60.5487 56.6914C61.5005 55.4633 63.8482 54.7293 66.1582 55.9416C69.6082 57.8831 72.8582 60.1395 75.8637 62.6796C77.3646 63.8919 77.7168 65.6836 76.6768 67.5771C74.845 70.9123 69.5468 75.3104 65.7009 74.4166C58.9837 72.8559 31.8182 62.6796 23.0924 33.1978C22.6017 31.803 22.7253 31.2758 22.7909 30.7737Z"
-                            fill="#EF5600" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M50 96.6331C44.4382 96.6331 41.3609 96.0564 36.3636 94.4369L26.7929 99.0612C20.7483 101.982 13.6364 97.7343 13.6364 91.2037V81.2597C3.84795 72.4397 0 62.2699 0 48.3166C0 21.6321 22.3858 0 50 0C77.6141 0 100 21.6321 100 48.3166C100 75.0009 77.6141 96.6331 50 96.6331ZM22.7273 77.4396L19.8361 74.8344C12.2312 67.9823 9.09091 60.3215 9.09091 48.3166C9.09091 26.4838 27.4065 8.78483 50 8.78483C72.5936 8.78483 90.9091 26.4838 90.9091 48.3166C90.9091 70.1495 72.5936 87.8483 50 87.8483C45.5195 87.8483 43.4182 87.4574 39.2543 86.108L35.6749 84.948L22.7273 91.2037V77.4396Z"
-                            fill="#EF5600" />
-                    </svg>
-                </a>
-
+                <img src="imagens/Lucid_Origin_Futuristic_scifi_logo_design_with_the_word_ANOMAL_2.jpg" alt="Anomaly">
+                <p>Roguelike espacial de ação ambientado em uma galáxia distorcida. O jogador enfrenta desafios mutáveis atravessando setores instáveis com o objetivo de restaurar o equilíbrio cósmico.</p>
+                <a href="https://nclsmrts.itch.io/anomaly" target="_blank">🔗 Ver projeto</a>
             </div>
         </div>
     </div>
 
-</body>
+    <div id="contatos">
+        <!-- Ícone decorativo de contatos -->
+        <div class="section-icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M15 20 L25 28 L30 24 L35 28 L45 20" stroke="#EF5600" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="10" y="18" width="40" height="25" rx="2" stroke="#EF5600" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
 
+        <h2>Contatos</h2>
+        <div class="conteudo">
+            <a href="https://www.instagram.com/sidr0g_?igsh=bW52aTJmeGRteG5q" target="_blank">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="#EF5600" stroke-width="2" fill="none"/>
+                    <circle cx="12" cy="12" r="4" stroke="#EF5600" stroke-width="2" fill="none"/>
+                    <circle cx="18" cy="6" r="1.5" fill="#EF5600"/>
+                </svg>
+            </a>
+
+            <a href="https://github.com/nclsmrts" target="_blank">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                    <path d="M50 4C24.704 4 4 24.704 4 50C4 70.608 17.584 88.064 36.304 94.32C38.704 94.768 39.6 93.328 39.6 92.112V83.632C26.912 86.56 24.176 77.776 24.176 77.776C22.032 72.496 18.896 71.072 18.896 71.072C14.512 68.064 19.216 68.128 19.216 68.128C24.064 68.464 26.544 73.104 26.544 73.104C30.848 80.48 37.84 78.352 39.76 77.2C40.192 74.112 41.456 71.984 42.848 70.864C32.352 69.712 21.344 65.584 21.344 47.664C21.344 42.672 23.152 38.576 26.624 35.36C26.128 34.224 24.448 29.328 27.088 22.656C27.088 22.656 31.12 21.408 39.584 27.216C43.472 26.224 47.744 25.728 52 25.712C56.256 25.728 60.528 26.224 64.416 27.216C72.88 21.408 76.912 22.656 76.912 22.656C79.552 29.328 77.872 34.224 77.376 35.36C80.848 38.576 82.656 42.672 82.656 47.664C82.656 65.632 71.632 69.696 61.104 70.8C62.848 72.32 64.416 75.296 64.416 79.84V92.112C64.416 93.344 65.296 94.8 67.744 94.32C86.432 88.048 96 70.608 96 50C96 24.704 75.296 4 50 4Z" fill="#EF5600"/>
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                    <path d="M50 4C24.704 4 4 24.704 4 50C4 75.296 24.704 96 50 96C75.296 96 96 75.296 96 50C96 24.704 75.296 4 50 4ZM71.744 36.608L65.728 66.16C65.248 68.256 63.968 68.768 62.144 67.728L51.648 59.968L46.624 64.832C46.08 65.376 45.616 65.84 44.544 65.84L45.296 55.136L64.544 37.6C65.392 36.848 64.352 36.416 63.168 37.168L39.072 52.224L28.768 48.96C26.416 48.224 26.368 46.72 29.296 45.68L68.56 30.608C70.528 29.872 72.288 31.12 71.744 36.608Z" fill="#EF5600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer decorativo -->
+    <footer>
+        <div class="footer-content">
+            <p>Desenvolvido por Nicolas Martins © 2024</p>
+            <div class="footer-decoration">
+                <svg width="100" height="20" viewBox="0 0 100 20" fill="none">
+                    <path d="M0 10 Q25 0, 50 10 T100 10" stroke="#EF5600" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
